@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap");
+
+:root {
+  --font-family: "Roboto", sans-serif;
+  --primary-color: #2d2d2d;
+  --secondary-color: #0061a2;
+  --accent-color: #00ff3c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-color);
+  font-family: var(--font-family);
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.skill-list {
+  margin: 0;
+  padding-inline: 0;
+  list-style: none;
+}
+
+.skill-list li {
+  color: #fff;
+  background: var(--primary-color);
+  text-align: center;
+  padding: 1em;
+  width: 4em;
+  border-radius: 1em;
+  box-shadow: 0 0.5rem 1rem -0.25rem var(--primary-color);
+}
+
+.scroller {
+  max-width: 400px;
+  outline: 3px solid #00ff3c;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+}
+
+.inner__scroller {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-block: 1rem;
+}
+
+.scroller[data-animated="true"] .inner__scroller {
+  flex-wrap: nowrap;
+}
