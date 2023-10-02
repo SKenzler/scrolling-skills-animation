@@ -1,6 +1,6 @@
 # Scrolling Skillset Animation
 
-![Scrolling Animation Sidebar Screenshot](https://github.com/SKenzler/master/scroll-animation-screenshot?raw=true)
+![Scrolling Animation Sidebar Screenshot](https://github.com/SKenzler/master/scroll-animation-screenshot.jpg?raw=true)
 
 ## About The Project
 
