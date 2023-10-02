@@ -5,6 +5,8 @@
   --primary-color: #2d2d2d;
   --secondary-color: #0061a2;
   --accent-color: #00ff3c;
+  --scroll-speed: 12s;
+  --scroll-direction: forwards;
 }
 
 * {
@@ -48,7 +50,6 @@ h1 {
 
 .scroller {
   max-width: 400px;
-  outline: 3px solid #00ff3c;
 }
 
 .scroller[data-animated="true"] {
@@ -73,7 +74,7 @@ h1 {
 .scroller[data-animated="true"] .inner__scroller {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll 20s linear infinite;
+  animation: scroll var(--scroll-speed) var(--scroll-direction) linear infinite;
 }
 
 @keyframes scroll {
